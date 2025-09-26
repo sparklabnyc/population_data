@@ -7,26 +7,19 @@ library(here)
 project.folder <-  paste0(print(here::here()),'/')
 
 data.folder <-  paste0(project.folder, "01_data/")
-  exposure.data <- paste0(data.folder, '1a_exposure_data/')
-  outcome.data <- paste0(data.folder, '1b_outcome_data/')
-  support.data <- paste0(data.folder, '1c_supportive_datasets/')
+adm2.pop.folder <- paste0(data.folder, 'pop_by_adm2/')
 
 code.folder <-  paste0(project.folder, "02_code/")
-  data.prep.code.folder <-  paste0(code.folder, "2a_data_prep/")
-  data.exploration.folder <-  paste0(code.folder, "2b_data_exploration/")
-  models.folder <-  paste0(code.folder, "2c_models/")
-  model.plotting.folder <-  paste0(code.folder, "2d_model_plotting/")
-  functions.folder <- paste0(code.folder, "20_functions/")
-
+process.code.folder <-  paste0(code.folder, "2a_process_data/")
+explore.code.folder <-  paste0(code.folder, "2b_explore_data/")
+comp.code.folder <-  paste0(code.folder, "2c_compare_pop_methods/")
+functions.folder <- paste0(code.folder, "20_functions/")
 
 output.folder <-  paste0(project.folder, "03_output/")
-  eda.output.folder <- paste0(output.folder, "3a_eda_output/")
-  model.output.folder <- paste0(output.folder, "3b_model_output/")
-
+pop.wt.grdi.folder <- paste0(output.folder, 'pop_wt_grdi_data/')
+pop.grdi.raster.folder <- paste0(output.folder, 'pop_wt_grdi_rasters/')
 tables.folder <- paste0(project.folder, "04_tables/")
 figures.folder <- paste0(project.folder, "05_figures/")
-lit.folder <- paste0(project.folder, "06_literature/")
-drafts.folder <- paste0(project.folder, "07_drafts/")
 
 
 #1b.Identify list of folder locations which have just been created above
